@@ -1,0 +1,116 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    margin: 10px 0px 40px 0px;
+}
+
+li a{
+    font-size: 20px;
+}
+
+a:hover{
+    color: green;
+}
+
+nav{
+    margin:0px 20px 0px 20px;
+}
+.navflex{
+    display:flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+li{
+    list-style: none;
+    margin: auto;
+    height: 5vh;
+    display:flex;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-rows: 403px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    'promo promo promo'
+    'rev1 rev2 rev3';
+    column-gap: 20px;
+    row-gap: 100px;
+}
+
+.promo{
+    grid-area: promo;
+    background-image: url(banner.jpg);
+    border-radius: 25px; 
+    color: white;
+}
+
+.promo h1, .promo a{
+    background-color: transparent;
+    padding-top: 5%;
+}
+
+.rev1{
+    grid-area: rev1;
+}
+
+.rev2{
+    grid-area: rev2;
+}
+
+.rev3{
+    grid-area: rev3;
+}
+
+.rev1, .rev2, .rev3, nav, .navflex  {
+    border-radius: 25px;
+    background-color: #00cc66;
+}
+
+header, footer, main, nav{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+header, main{
+    text-align: center;
+}
+
+.footflex{
+    display: flex;
+    align-items: start;
+    border-top-style: solid;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+footer div{
+    flex-basis: 50%;
+}
+
+p, h1, a, li{ 
+    background: transparent;
+}
+
+article img{
+    width: auto;
+}
+
+article p{
+    margin:10px
+}
+
+.rev1, .rev2, .rev3{
+    width: 75%;
+    height: 100%;
+    justify-self: center;
+    text-align: center;
+}
+
+.footlogo{
+    height: 150px;
+    width: 100px;
+}
